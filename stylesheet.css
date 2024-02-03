@@ -1,0 +1,272 @@
+.navbar {
+    padding: 20px 30px 20px 30px !important;
+    background-color: #1e1c1c;
+    background-color: ;
+     color: white;
+}
+body {
+  height: 80vh;
+  background-image: url(./sky-sights.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 150px !important;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 760px) {
+    .navbar-nav {
+        gap: 10px !important;
+    }
+}
+@media only screen and (max-width:480px) {
+  .hero-img {
+    height: 200px !important;
+  }
+}
+.nav-link {
+    color: rgb(255, 253, 253) !important;
+    font-size: 16px !important;
+    font-weight:600 !important;
+}
+.nav-link:hover {
+    border-bottom: 2px solid rgb(0, 255, 0);
+    border-top: 2px solid rgb(0, 255, 0);
+}
+.navbar-nav {
+    gap: 50px;
+}
+.navbar-toggler {
+    background-color: #65ff93a5 !important;
+}
+.logo-2 {
+    font-family: monospace;
+    letter-spacing: 10px;
+    font-size:15px;
+    display: flex;
+    margin-top: -10px !important;
+}
+.animate-charcter {
+  background-image: linear-gradient(
+    -225deg,
+    #f3fffa 0%,
+    #5de9cd 29%,
+    #2eff78 67%,
+    #2cf9fc 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1s linear infinite;
+  display: inline-block;
+      font-size: 45px !important;
+      font-weight: 700;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 13px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.hero-img {
+    height: 400px;
+    margin-left: 250px;
+}
+.slide-left {
+  animation: slide-left 3s;
+  position: relative; /* Ensure the image has a positioned set */
+}
+
+@keyframes slide-left {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+.slide-right {
+  animation: slide-right 3s;
+  position: relative; /* Ensure the image has a positioned set */
+}
+
+@keyframes slide-right {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+.hero {
+  display: flex;
+    margin-top: 50px;
+    max-width: 1000px;
+    padding: 15px 15px 15px 15px;
+}
+@media only screen and (max-width:780px) {
+  .sm-icons {
+    display: none !important;
+  }
+  .v-des {
+    display: none;
+  }
+}
+.v-n {
+  font-family: 'Anton', sans-serif;
+  text-align: left;
+  letter-spacing: 5px;
+}
+@media only screen and (max-width:780px) {
+  .v-n {
+    text-align: center;
+  }
+}
+.v-des {
+  font-family: serif;
+  text-align: left;
+  font-weight: 1000 !important;
+}
+.f-title {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.f-des {
+  font-family: 'DM Serif Display', serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+}
+.ach-des {
+  font-family: 'DM Serif Display', serif;
+  text-align: left;
+  color: white;
+  text-align: justify;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.ach-title {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 5px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.achievements {
+  height: inherit;
+}
+html{
+  scroll-behavior: smooth;
+}
+.product {
+  margin-top: 40px !important;
+}
+.prdt {
+  margin-top: -50px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  cursor: pointer;
+  flex: 0 0 calc(33.33% - 20px);
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(0.9);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+      flex: 0 0 calc(100% - 20px); /* One image per row for smaller screens */
+  }
+}
+.g-n {
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 5px;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+.ach-abt {
+  font-family: 'DM Serif Display', serif;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+}
+.ach-abt-title {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 5px;
+  color: rgb(0, 0, 0);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.spensys {
+  font-weight: 900;
+}
+b {
+  letter-spacing: 5px;
+}
+.footer {
+  margin-top: 90px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.hr {
+  max-width: 1000px !important;
+}
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/footers/footer-2/assets/css/footer-2.css">
+
+
